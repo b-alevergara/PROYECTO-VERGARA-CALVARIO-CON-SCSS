@@ -4,11 +4,11 @@
         width: $full;
 
         footer{
+            position: static;
+            padding: $spacing-small;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: $spacing-xsmall;
-            margin: 5px;
             background-color: $primary;
                 }
     }
