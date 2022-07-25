@@ -1,0 +1,15 @@
+.grid{
+    .grid__footer{
+        grid-area: footer;
+        width: $full;
+
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: $spacing-xsmall;
+            margin: 5px;
+            background-color: $primary;
+                }
+    }
+}

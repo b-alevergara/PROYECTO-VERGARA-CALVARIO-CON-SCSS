@@ -1,0 +1,32 @@
+.grid__main{
+    max-width: 1200px;
+    margin-top: $spacing-large;
+
+    .main__seccionUno{
+
+        .main__seccionUno__cuadroUno{
+
+
+            .main__seccionUno__cuadroUno__img{}
+
+            .main__seccionUno__cuadroUno__descripcion{}
+            }
+    }
+    .main__seccionDos{
+
+        .main__seccionDos__cuadroDos{
+            .main__seccionDos__cuadroDos__img{}
+        }
+    }
+    .main__seccionTres{
+
+        .main__seccionTres__cuadroTres{
+            &__seccionTres__cuadroTres__descripcion{}
+        }
+    }
+    .main__seccionCuatro{
+
+
+
+    }
+}

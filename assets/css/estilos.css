@@ -1,0 +1,102 @@
+/*colores*/
+/*fuentes*/
+/*espacios*/
+/*font-sizes*/
+/*width*/
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&family=IBM+Plex+Serif:wght@300&family=Playfair+Display&family=Roboto+Slab:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Playfair Display', serif; }
+
+a {
+  display: flex;
+  color: #020202;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  padding: 0.8rem;
+  text-decoration: none; }
+  a:hover {
+    color: #FFFFFF; }
+
+td.tr {
+  text-decoration: none;
+  list-style-type: none; }
+
+h2 {
+  display: flex;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 2.3em;
+  font-family: "Roboto Slab", serif;
+  align-items: center;
+  justify-content: center; }
+
+h3 {
+  display: flex;
+  justify-content: center;
+  color: #020202;
+  text-transform: capitalize;
+  font-size: 2.3em;
+  font-weight: bold; }
+
+h4 {
+  display: flex;
+  justify-content: center;
+  color: #020202;
+  text-transform: capitalize;
+  font-size: 1.8;
+  margin: 2.5rem; }
+
+p {
+  color: #020202;
+  text-transform: capitalize;
+  font-size: 2.5em;
+  font-weight: lighter; }
+
+.grid .grid__header {
+  grid-area: header;
+  width: 100%; }
+  .grid .grid__header header {
+    position: static;
+    width: 100%;
+    background-color: #A1CEEA; }
+    .grid .grid__header header .header {
+      padding: 0.5rem; }
+      .grid .grid__header header .header .header__encabezado {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .grid .grid__header header .header .header__encabezado .header__encabezado__img {
+          max-width: 300px;
+          justify-content: center; }
+      .grid .grid__header header .header .header__menu {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #FCB9FF;
+        border-radius: 10px;
+        gap: 2.5rem; }
+
+.grid .grid__footer {
+  grid-area: footer;
+  width: 100%; }
+  .grid .grid__footer footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 5px;
+    background-color: #A1CEEA; }
+
+.grid__main {
+  max-width: 1200px;
+  margin-top: 2rem; }
