@@ -71,6 +71,28 @@ label {
   font-size: 2.1em;
   text-transform: capitalize; }
 
+@keyframes crecer {
+  0% {
+    transform: scale(1); }
+  25% {
+    transform: scale(0.9); }
+  50% {
+    transform: scale(0.8); }
+  75% {
+    transform: scale(0.9); } }
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: #c8b9ff;
+    font-family: "Roboto Slab", serif; }
+    body h3 {
+      font-size: 1.4em; }
+    body p {
+      font-size: 1.4em; }
+    body label {
+      font-size: 1em;
+      color: blue; } }
+
 .grid .grid__header {
   grid-area: header;
   width: 100%; }
@@ -138,7 +160,9 @@ label {
     background-color: #c8b9ff;
     border-radius: 15px;
     align-items: center;
-    row-gap: 2.5rem; }
+    row-gap: 2.5rem;
+    animation: crecer 2s infinite;
+    animation-delay: 1s; }
     .grid__main .main__seccionDos .main__seccionDos__cuadroDos .main__seccionDos__cuadroDos__img {
       height: auto;
       width: 100%;
@@ -152,7 +176,8 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    animation: crecer 2s infinite; }
     .grid__main .main__seccionTres .main__seccionTres__cuadroTres .main__seccionTres__cuadroTres__img {
       height: auto;
       width: 100%;
@@ -161,6 +186,6 @@ label {
       border-style: outset; }
   .grid__main .main__seccionCuatro {
     padding-top: 2rem; }
-    .grid__main .main__seccionCuatro .main__seccionCuatro__cuadroCuatro {
+    .grid__main .main__seccionCuatro__seccionCuatro__cuadroCuatro {
       border-radius: 15px;
       row-gap: 2.5rem; }

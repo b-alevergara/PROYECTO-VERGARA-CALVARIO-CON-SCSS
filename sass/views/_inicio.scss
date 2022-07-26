@@ -42,6 +42,9 @@
             align-items: center;
             row-gap: $spacing-xlarge;
 
+            animation: crecer 2s infinite;
+            animation-delay: 1s;
+
             .main__seccionDos__cuadroDos__img{
                 height: auto;
                 width: $full;
@@ -62,6 +65,8 @@
             justify-content: center;
             align-items: center;
 
+            animation: crecer 2s infinite;
+
             .main__seccionTres__cuadroTres__img{
                 height: auto;
                 width: $full;
@@ -74,7 +79,7 @@
     .main__seccionCuatro{
         padding-top: $spacing-large;
 
-        .main__seccionCuatro__cuadroCuatro{
+        &__seccionCuatro__cuadroCuatro{
             border-radius: 15px;
             row-gap: $spacing-xlarge;
             }
