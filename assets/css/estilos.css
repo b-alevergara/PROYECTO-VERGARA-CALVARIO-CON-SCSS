@@ -36,6 +36,7 @@ h2 {
   text-transform: uppercase;
   font-size: 2.1em;
   font-family: "Roboto Slab", serif;
+  font-weight: bold;
   align-items: center;
   justify-content: center; }
 
@@ -173,11 +174,16 @@ label {
     padding-bottom: 2rem;
     background-color: #f9befc;
     border-radius: 15px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     animation: crecer 2s infinite; }
+    .grid__main .main__seccionTres .main__seccionTres__cuadroTres .main__seccionTres__cuadro__img {
+      height: auto;
+      width: 100%;
+      max-width: 600px; }
     .grid__main .main__seccionTres .main__seccionTres__cuadroTres .main__seccionTres__cuadroTres__img {
       height: auto;
       width: 100%;

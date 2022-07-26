@@ -60,12 +60,19 @@
             padding-bottom: $spacing-large;
             background-color: $secondary;
             border-radius: 15px;
+            height: 500px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
 
             animation: crecer 2s infinite;
+
+            .main__seccionTres__cuadro__img{
+                height: auto;
+                width: $full;
+                max-width: 600px;
+            }
 
             .main__seccionTres__cuadroTres__img{
                 height: auto;
