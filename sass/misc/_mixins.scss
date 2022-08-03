@@ -1,0 +1,21 @@
+
+@mixin cuadros ($background){
+    background-color: $background;
+    padding-top: $spacing-large;
+    padding-bottom: $spacing-large ;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+    row-gap: $spacing-xlarge;
+
+}
+@mixin imagen {
+    height: auto;
+    border-radius: 7%;
+}
+@mixin descripcion {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}

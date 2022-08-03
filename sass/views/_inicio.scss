@@ -22,7 +22,7 @@
                 height: auto;
                 width: $full;
                 max-width: 600px;
-                border-radius: 7%;
+                border-radius: 15px;
             }
 
             .main__seccionUno__cuadroUno__descripcion{
@@ -33,53 +33,29 @@
     .main__seccionDos{
 
         .main__seccionDos__cuadroDos{
-            padding-top: $spacing-large;
-            padding-bottom: $spacing-xlarge;
-            display: flex;
-            flex-direction: column;
-            background-color: $primary-lighter;
-            border-radius: 15px;
-            align-items: center;
-            row-gap: $spacing-xlarge;
-
-            animation: crecer 2s infinite;
-            animation-delay: 1s;
+            @include cuadros ($primary-lighter);
 
             .main__seccionDos__cuadroDos__img{
                 height: auto;
                 width: $full;
                 max-width: 600px;
-                border-radius: 5%;
+                border-radius: 15px;
             }
         }
     }
     .main__seccionTres{
 
         .main__seccionTres__cuadroTres{
-            padding-top: $spacing-large;
-            padding-bottom: $spacing-large;
-            background-color: $secondary;
-            border-radius: 15px;
-            height: 500px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include cuadros ($secondary);
+            height: 550px;
 
             animation: crecer 2s infinite;
-
-            .main__seccionTres__cuadro__img{
-                height: auto;
-                width: $full;
-                max-width: 600px;
-            }
 
             .main__seccionTres__cuadroTres__img{
                 height: auto;
                 width: $full;
                 max-width: 250px;
                 max-height: 400px;
-                border-style:outset;
             }
         }
     }
@@ -90,23 +66,96 @@
             border-radius: 15px;
             row-gap: $spacing-xlarge;
             }
+    }
+    .main__seccionCinco{
 
+        .main__seccionCinco__cuadroCinco{
+            @include cuadros (#e6b3fd); 
+
+            row-gap: $spacing-xlarge;
+
+            .main__seccionCinco__cuadroCinco_img{
+                @include imagen;
+                width: $full;
+                max-width: 400px;
+                max-height: 600px;
+            }
+            .main__seccionCinco__cuadroCinco_descripcion{
+                @extend .main__seccionUno__cuadroUno__descripcion;
+            }
+        }
+    }
+    .main__seccionSeis{
+        .main__seccionSeis__cuadroSeis{
+            @include cuadros (#f8aecb); 
+            
+            .main__seccionSeis__cuadroSeis_img{
+                @include imagen;
+                max-width: 400px;
+                max-height: 600px;
+
+            }
+            .main__seccionSeis__cuadroSeis_descripcion{@extend .main__seccionUno__cuadroUno__descripcion;
+            }
+        }
+    }
+    .main__seccionSiete{
+        .main__seccionSiete__cuadroSiete{
+            @include cuadros (#c8b9ff); 
+
+            .main__seccionSiete__cuadroSiete_img{
+                @include imagen;
+                max-width: 400px;
+                max-height: 600px;
+
+            }
+            .main__seccionSiete__cuadroSiete_descripcion{@extend .main__seccionUno__cuadroUno__descripcion;
+            }
+        }
+    }
+    .main__seccionOcho{
+        .main__seccionOcho__cuadroOcho{
+            @include cuadros (#f0b8ce); 
+            
+            .main__seccionOcho__cuadroOcho_img{
+                @include imagen;
+                max-width: 400px;
+                max-height: 600px;
+
+            }
+            .main__seccionOcho__cuadroOcho_descripcion{@extend .main__seccionUno__cuadroUno__descripcion;
+            }
+        }
     }
 }
 @media screen and (max-width: 1024px) {
     body{ 
         background-color: $primary-lighter;
         font-family: $font-alternative; 
-        
-        h3{
-            font-size: $mediaq;
+        font-size: .9em;
+        h1{font-size: $mediaq;}
+        h1:hover{
+            background-color: $background;
+            height: 1.5rem;
         }
-        p{
-            font-size: $mediaq;
-        }
+        h2{font-size: $mediaq;}
+        h3{font-size: $mediaq;}
+        h4{font-size: $mediaq;}
+        p{font-size: $mediaq;}
         label{
             font-size: $xsmall;
             color: $mediaQcolor;
+        }
+        img.header__encabezado__img{
+            height: auto;
+            width: 160px;
+        }
+        .header__menu{
+            display:flex;
+            flex-wrap: wrap;
+        }
+        .grid__footer{
+            font-size: .8em;
         }
     }
 }
