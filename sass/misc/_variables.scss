@@ -1,6 +1,6 @@
 /*colores*/
 $primary: #A1CEEA;
-$primary-lighter: #c8b9ff;
+$primary-lighter: #e6dfff;
 $primary-darker: #9293db;
 $secondary: #f9befc;
 $alternative: #f8aee9;
@@ -36,3 +36,8 @@ $xlarge: 4em;
 $full: 100%;
 $partial: 80%;
 
+/*map*/
+$width:(
+    'full': 100%,
+    'partial': 80%,
+    )

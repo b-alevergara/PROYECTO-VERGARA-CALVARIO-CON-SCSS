@@ -1,5 +1,5 @@
 .grid__main{
-    max-width: $full;
+    max-width: map-get($map: $width, $key:'full');
     margin: $spacing-large;
     padding: $spacing-xlarge;
     display: flex;
@@ -20,7 +20,7 @@
 
             .main__seccionUno__cuadroUno__img{
                 height: auto;
-                width: $full;
+                width: map-get($map: $width, $key:'full');
                 max-width: 600px;
                 border-radius: 15px;
             }
@@ -33,11 +33,11 @@
     .main__seccionDos{
 
         .main__seccionDos__cuadroDos{
-            @include cuadros ($primary-lighter);
+            @include cuadros (#c8b9ff); 
 
             .main__seccionDos__cuadroDos__img{
                 height: auto;
-                width: $full;
+                width: map-get($map: $width, $key:'full');
                 max-width: 600px;
                 border-radius: 15px;
             }
@@ -53,7 +53,7 @@
 
             .main__seccionTres__cuadroTres__img{
                 height: auto;
-                width: $full;
+                width: map-get($map: $width, $key:'full');
                 max-width: 250px;
                 max-height: 400px;
             }
@@ -76,7 +76,7 @@
 
             .main__seccionCinco__cuadroCinco_img{
                 @include imagen;
-                width: $full;
+                width: map-get($map: $width, $key:'full');
                 max-width: 400px;
                 max-height: 600px;
             }
