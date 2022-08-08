@@ -86,6 +86,9 @@ label {
   font-size: 2.1em;
   text-transform: capitalize; }
 
+img {
+  height: auto; }
+
 @keyframes crecer {
   0% {
     transform: scale(1); }
@@ -120,7 +123,8 @@ label {
         align-items: center; }
         .grid .grid__header header .header .header__encabezado .header__encabezado__img {
           max-width: 300px;
-          justify-content: center; }
+          justify-content: center;
+          height: auto; }
       .grid .grid__header header .header .header__menu {
         display: inline-flex;
         justify-content: center;
@@ -227,6 +231,7 @@ label {
     .grid__main .main__seccionSeis .main__seccionSeis__cuadroSeis .main__seccionSeis__cuadroSeis_img {
       height: auto;
       border-radius: 7%;
+      width: 100%;
       max-width: 400px;
       max-height: 600px; }
   .grid__main .main__seccionSiete .main__seccionSiete__cuadroSiete {
@@ -241,6 +246,7 @@ label {
     .grid__main .main__seccionSiete .main__seccionSiete__cuadroSiete .main__seccionSiete__cuadroSiete_img {
       height: auto;
       border-radius: 7%;
+      width: 100%;
       max-width: 400px;
       max-height: 600px; }
   .grid__main .main__seccionOcho .main__seccionOcho__cuadroOcho {
@@ -255,6 +261,7 @@ label {
     .grid__main .main__seccionOcho .main__seccionOcho__cuadroOcho .main__seccionOcho__cuadroOcho_img {
       height: auto;
       border-radius: 7%;
+      width: 100%;
       max-width: 400px;
       max-height: 600px; }
 
@@ -276,6 +283,9 @@ label {
       font-size: 1.4em; }
     body p {
       font-size: 1.4em; }
+    body img {
+      height: 190px;
+      max-width: 300px; }
     body label {
       font-size: 1em;
       color: blue; }
