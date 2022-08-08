@@ -75,6 +75,7 @@ h4 {
 p {
   display: flex;
   justify-content: center;
+  align-items: center;
   color: #020202;
   text-transform: capitalize;
   font-size: 2.5em;
@@ -197,7 +198,8 @@ img {
       height: auto;
       width: 100%;
       max-width: 250px;
-      max-height: 400px; }
+      max-height: 400px;
+      border-radius: 15px; }
   .grid__main .main__seccionCuatro {
     padding-top: 2rem; }
     .grid__main .main__seccionCuatro__seccionCuatro__cuadroCuatro {
@@ -284,7 +286,7 @@ img {
     body p {
       font-size: 1.4em; }
     body img {
-      height: 190px;
+      height: auto;
       max-width: 300px; }
     body label {
       font-size: 1em;
